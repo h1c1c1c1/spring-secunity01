@@ -13,6 +13,8 @@ public class LoginAuthenticationProvider implements AuthenticationProvider {
     @Override
     //重新AuthenticationProvider里的方法
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+        
+        sfsfs
         //拿到用户名跟密码
         String userName =(String) authentication.getPrincipal();
         String password = (String) authentication.getCredentials();
