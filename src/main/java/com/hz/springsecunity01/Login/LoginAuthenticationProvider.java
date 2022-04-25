@@ -13,8 +13,7 @@ public class LoginAuthenticationProvider implements AuthenticationProvider {
     @Override
     //重新AuthenticationProvider里的方法
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        
-        sfsfs
+
         //拿到用户名跟密码
         String userName =(String) authentication.getPrincipal();
         String password = (String) authentication.getCredentials();
@@ -25,7 +24,7 @@ public class LoginAuthenticationProvider implements AuthenticationProvider {
                 AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN");
 
 
-        return new UsernamePasswordAuthenticationToken(  );
+        return new UsernamePasswordAuthenticationToken();
     }
     /*** 如果该AuthenticationProvider支持传入的Authentication对象，则返回true * @param aClass * @return */
     @Override
